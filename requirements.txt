@@ -1,0 +1,21 @@
+# Backend dependencies
+fastapi
+uvicorn[standard]
+python-dotenv
+requests
+pydantic
+google-auth
+
+# Basic dependencies first
+pillow
+numpy
+
+# AI/ML dependencies (compatible versions)
+diffusers
+transformers
+accelerate
+
+# GPU optimization (optional but recommended)
+xformers
+
+# PyTorch will be installed separately based on system

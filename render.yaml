@@ -1,0 +1,21 @@
+﻿services:
+  - type: web
+    name: alkimi-ai-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: CORS_ORIGINS
+        value: https://your-frontend.vercel.app
+      - key: SESSION_TTL_SECONDS
+        value: 604800
+      - key: HUGGINGFACE_API_TOKEN
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false

@@ -1,0 +1,14 @@
+﻿.env
+.env.example
+venv/
+.venv/
+__pycache__/
+.cache/
+*.pt
+*.safetensors
+data/auth_store.json
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+frontend/dist/
+backend/__pycache__/
