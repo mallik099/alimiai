@@ -6,6 +6,7 @@ import DomainSuggestionsPage from "./pages/DomainSuggestionsPage";
 import LandingHomePage from "./pages/LandingHomePage";
 import LogoGeneratorPage from "./pages/LogoGeneratorPage";
 import TaglineGeneratorPage from "./pages/TaglineGeneratorPage";
+import VoiceAssistantPage from "./pages/VoiceAssistantPage";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path="/ai-brand-generator" element={<BrandStudioPage />} />
       <Route path="/ai-tagline" element={<TaglineGeneratorPage />} />
       <Route path="/ai-logo" element={<LogoGeneratorPage />} />
+      <Route path="/ai-voice" element={<VoiceAssistantPage />} />
       <Route path="/ai-domain" element={<DomainSuggestionsPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />

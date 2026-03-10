@@ -6,9 +6,10 @@ const items = [
   { to: "/ai-brand-generator", label: "AI Brand Generator", key: "generator" },
   { to: "/ai-tagline", label: "AI Tagline", key: "tagline" },
   { to: "/ai-logo", label: "AI Logo", key: "logo" },
+  { to: "/ai-voice", label: "AI Voice", key: "voice" },
   { to: "/brand-search", label: "Brand Search", key: "search" },
   { to: "/ai-domain", label: "AI Domain", key: "domain" },
-  { to: "/about", label: "About", key: "about" }
+  { to: "/about", label: "About Us", key: "about" }
 ];
 
 export default function TopNavbar({ active = "home", showActions = false }) {
